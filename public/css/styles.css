@@ -1,6 +1,10 @@
 *{
     font-family: 'Times New Roman', Times, serif;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
 }
+/* All Tables Data  */
 th,td{
  
     border:3px solid brown;
@@ -8,7 +12,7 @@ th,td{
 td:first-child{
     width:15%;
 }
-td:last-child:hover{
+td:hover{
     background-color: brown;
     color:burlywood;
     font-size: 30px;}
@@ -22,68 +26,53 @@ table{
     border:5px solid brown;
     background-color: bisque;
 }
-img{
-   display:block;
-   margin:0 auto;
+a{
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    color:black;
+    display: inline-block;
+    font-size: 25px;
 }
 h1{
     text-align: center;
-    text-transform: uppercase;
-    margin:0;
-    padding:20px;
 }
-a{
-    position: relative;
-    top:70px;
-    text-decoration: none;
-    color:brown;
-    font-size: 30px;
-    font-weight:bold;
-    padding:30px;
-}
-.line3{
-    position: relative;
-    top:50px;
-}
-a:hover{
-    color:burlywood;
-}
+/* header section in all pages */
 header{
+    width:100%;
     background-color: brown;
 }
-div{
-    background-color: bisque;
-}
-.row{
-    height:500px;
-}
-.event-div{
-background-color: burlywood;
-text-align: center;
-height:200px;
-margin:30px;
-border-radius:10%;
-box-shadow: 10px 10px 5px 2px chocolate;
+header img{
+   display:block;
+   margin:0 auto;
+   width:50%;
 }
 
-.event-div:hover{
-    background-color: chocolate;
-    box-shadow: 10px 10px 5px 2px burlywood;
-    position: relative;
-    left:10px;
-    bottom:10px;
-    width:350px;
-    color:burlywood;
+.container{
+    display:flex;
+    justify-content: center;
+    column-gap: 5%;
+    
 }
-/* @media (min-width:100px) and (max-width:600px){
-    table{
-        width:100%;
-        text-align: center;
-        margin:0 auto;
-        border:5px solid brown;
-        background-color: bisque;
+.container div{
+    background-color: burlywood;
+    flex-basis: 20%;
+    text-align: center;
+    height:150px;
+    border-radius: 20px;
+    padding:5%;
+}
+
+@media (max-width:400px){
+    .container{
+        flex-direction:column;
+       
+        
     }
-    header,h1,img{
-        width:100%;
+    .container div{
+width:50%;
+margin:20px auto;
     }
-} */
+   a{
+    font-size: 16px;
+   }
+}
