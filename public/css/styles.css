@@ -57,9 +57,9 @@ header img{
     background-color: burlywood;
     flex-basis: 20%;
     text-align: center;
-    height:150px;
+    height:auto;
     border-radius: 20px;
-    padding:5%;
+    padding:2%;
 }
 
 @media (max-width:400px){
